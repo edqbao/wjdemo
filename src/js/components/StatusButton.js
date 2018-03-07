@@ -20,7 +20,7 @@ class StatusButton extends React.Component {
     let self = this
     let jobId = this.props.jobId
     let status = this.props.status
-    fetch(`http://wjdemoapi.us-east-2.elasticbeanstalk.com/api/jobs/updatestatus/${jobId}`, {
+    fetch(`https://wjdemoapi.herokuapp.com/api/jobs/updatestatus/${jobId}`, {
       method: 'GET',
       mode: 'cors',
       headers: {
@@ -41,7 +41,7 @@ class StatusButton extends React.Component {
     let self = this
     let jobId = this.props.jobId
     let status = this.props.status
-    fetch(`http://wjdemoapi.us-east-2.elasticbeanstalk.com/api/jobs/updatestatus/${jobId}`, {
+    fetch(`https://wjdemoapi.herokuapp.com/api/jobs/updatestatus/${jobId}`, {
       method: 'GET',
       mode: 'cors',
       headers: {

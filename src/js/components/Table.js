@@ -19,7 +19,7 @@ class TableExamplePositiveNegative extends React.Component {
     let self = this
     let userId = this.props.userId
     console.log(userId)
-    fetch(`http://wjdemoapi.us-east-2.elasticbeanstalk.com/api/jobs/jobs/${userId}`, {
+    fetch(`https://wjdemoapi.herokuapp.com/api/jobs/jobs/${userId}`, {
       method: 'GET',
       mode: 'cors',
       headers: {

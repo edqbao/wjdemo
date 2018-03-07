@@ -29,7 +29,7 @@ class FormExampleForm extends React.Component{
   handleSubmit() {
     let self = this
     console.log(this.props.history)
-    fetch(`http://wjdemoapi.us-east-2.elasticbeanstalk.com/api/users/login`, {
+    fetch(`https://wjdemoapi.herokuapp.com/api/users/login`, {
       method: 'POST',
       mode: 'cors',
       headers: {
